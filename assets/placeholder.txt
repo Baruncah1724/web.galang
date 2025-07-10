@@ -1,0 +1,6 @@
+This folder contains website assets:
+- dxd.png (logo/favicon)
+- bg.PNG (background image) 
+- Video.mp4 (background video)
+
+Upload your assets here to complete the website.

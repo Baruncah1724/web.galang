@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Blog Galangrifda</title>
+    <link rel="icon" href="assets/dxd.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="index.html">
+          <div class="logo"><img src="assets/dxd.png" alt="Logo" /></div>
+        </a>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </div>
+    </header>
+    <section id="services">
+      <div class="services container">
+        <div class="services-top">
+          <h1 class="section-title">Blog</h1>
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Cari artikel..." />
+            <ul id="articleList">
+              <li>
+                <a href="partblog/blg.html">Jadi programmer di tahun 2025</a>
+              </li>
+              <li>
+                <a href="partblog/blg1.html"
+                  >Belajar dasar pembuatan website dengan menggunakan HTML &
+                  CSS</a
+                >
+              </li>
+              <li><a href="posts/artikel-3.html">Menghadapi Era AI</a></li>
+            </ul>
+          </div>
+          <div class="grid-container">
+            <!-- Blog Card -->
+            <a href="partblog/blg.html" class="card">
+              <img
+                src=" https://dibimbing-cdn.sgp1.cdn.digitaloceanspaces.com/media-strapi/19005bcaf1c98b0d50f3134e7036824a.webp "
+                alt="AI Programmer"
+                class="card-img"
+              />
+              <h2 class="card-title">
+                Cita-Cita Jadi Programmer di Tahun 2025: Apakah Work It?
+              </h2>
+              <p class="card-meta">Juli 11, 2025 • 5 min read</p>
+              <p class="card-desc">
+                Dengan hadirnya AI, apakah profesi programmer masih relevan di
+                masa kini? Jawabannya di sini...
+              </p>
+              <span class="card-link">Read more →</span>
+            </a>
+          </div>
+          <div class="grid-container">
+            <a href="posts/jadi-programmer-2025.html" class="card">
+              <img
+                src="https://ideacdn.net/idea/ct/82/myassets/blogs/html-css.jpg?revision=1581690718 "
+                alt="AI Programmer"
+                class="card-img"
+              />
+              <h2 class="card-title">
+                Belajar membuat website sederhana dengan menggunakan HTML dan
+                CSS
+              </h2>
+              <p class="card-meta">Juli 10, 2025 • 5 min read</p>
+              <p class="card-desc">coming soon</p>
+              <span class="card-link">Read more →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
