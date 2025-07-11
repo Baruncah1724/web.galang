@@ -1,16 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cara Membuat Website dengan HTML dan CSS</title>
+    <style>
+      body {
+        justify-content :center;
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        line-height :1.8;
+        padding: 40px;
+        max-width: 900px;
+        margin: 0px;
+        overflow-x:;
+      }
 
-<div>
-    <h1>masih pusing nanti aja nulis blog ny</h1>
-                                        
-</div>
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+      }
 
-</body>
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        margin-top: 40px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
+
+      code {
+        justify-content:center ;
+        Border-radius:4px;
+        background-color: grey;
+        padding: 3px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+      }
+
+      pre {
+        background-color :#272822;
+        color:black;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+
+      ul {
+        margin-left: 20px;
+      }
+
+      blockquote {
+        background: #eaf4ff;
+        border-left: 5px solid #007bff;
+        padding: 10px 20px;
+        margin: 20px 0;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 0.9em;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cara Membuat Website dengan HTML dan CSS</h1>
+
+    <p>
+      Di zaman serba digital seperti sekarang, memiliki website sendiri sudah
+      menjadi kebutuhan, baik untuk pribadi, bisnis, portofolio, blog, maupun
+      toko online. Tapi bagaimana caranya membuat website dari nol? Apakah harus
+      jago nge coding? Jawabannya: tidak.
+    </p>
+
+    <p>
+      kalau kamu seorang pemula seperti saya, kamu bisa mulai membuat website sederhana hanya
+      dengan dua teknologi dasar: <strong>HTML</strong> dan
+      <strong>CSS</strong>. Artikel ini akan membahas secara lengkap dan
+      sistematis bagaimana sih membuat website sendiri dari awal, mulai dari konsep,
+      penulisan kode, hingga melihat hasilnya langsung di browser.
+    </p>
+
+    <h2>Apa Itu HTML dan CSS?</h2>
+
+    <h3>1. HTML (HyperText Markup Language)</h3>
+    <p>
+      HTML adalah bahasa markup yang digunakan untuk membuat struktur dasar
+      sebuah halaman web. Dengan HTML, kamu bisa menampilkan berbagai elemen
+      seperti:
+    </p>
+    <ul>
+      <li>Teks dan paragraf</li>
+      <li>Gambar dan video</li>
+      <li>Tombol dan link</li>
+      <li>Formulir</li>
+      <li>Tabel</li>
+    </ul>
+
+    <p>
+      HTML  adalah <em>kerangka utama</em> dari sebuah halaman web. Ibarat kata sebuah
+      rumah, HTML adalah tembok, atap, dan jendela.
+    </p>
+
+    <h3>2. CSS (Cascading Style Sheets)</h3>
+    <p>
+      CSS adalah bahasa yang digunakan untuk
+      <strong>mengatur tampilan</strong> atau desain dari elemen HTML. Dengan
+      CSS, kamu bisa mengatur:
+    </p>
+    <ul>
+      <li>Warna latar belakang dan teks</li>
+      <li>Ukuran dan jenis font</li>
+      <li>Posisi dan ukuran elemen</li>
+      <li>Animasi dan transisi</li>
+      <li>Layout halaman secara keseluruhan</li>
+    </ul>
+
+    <p>
+      CSS adalah <em>cat, dekorasi, dan furnitur</em> dari rumah tersebut. Tanpa
+      CSS, halaman web akan terlihat polos dan kaku, contoh besarnya ialah website saya ini tanpa menggunakan CSS website saya ini hanya berisikan kan kata tanpa background warna, background photo dan juga fitur tampilkan lainnya yg pastinya membuat sebuah tampilan tidak menarik.
+    </p>
+
+    <h2>Langkah-langkah Membuat Website Sederhana</h2>
+
+    <h3>1. Persiapkan Alat</h3>
+    <p>Kamu hanya perlu:</p>
+    <ul>
+      <li>
+        <strong>Text Editor</strong> seperti Visual Studio Code atau stackbliz sama seperti yg saya gunakan 
+      </li>
+      <li><strong>Browser</strong> seperti Google Chrome atau Firefox</li>
+    </ul>
+
+    <h3>2. Buat File HTML</h3>
+    <p>Buat file bernama <code>index.html</code> dan isi dengan:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Website Sederhana&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Selamat Datang di Website Saya&lt;/h1&gt;
+  &lt;p&gt;Ini adalah website pertama saya yang dibuat dengan HTML dan CSS.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+    <h3>3. Tambahkan CSS</h3>
+    <p>Buat file <code>style.css</code> lalu isi dengan:</p>
+    <pre><code>body {
+  background-color: #black;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+}</code></pre>
+
+    <p> Ingat jangan lupa hubungkan ke HTML dengan menambahkan ini di bagian &lt;head&gt;:</p>
+    <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+    <h3>4. Lihat Hasilnya</h3>
+    <p>
+      Simpan kedua file di satu folder, lalu klik dua kali file
+      <code>index.html</code> untuk membuka di browser. Selamat! Website
+      pertamamu sudah jadi!
+    </p>
+
+    <h2>Menambahkan Elemen Lain</h2>
+    <ul>
+      <li>
+        <strong>Gambar:</strong><br /><code
+          >&lt;img src="gambar.jpg" alt="Gambar" width="300"&gt;</code
+        >
+      </li>
+      <li>
+        <strong>Link:</strong><br /><code
+          >&lt;a href="https://gambar.com"&gt;
+          Kunjungi&lt;/a&gt;</code
+        >
+      </li>
+      <li>
+        <strong>Daftar:</strong><br /><code
+          >&lt;ul&gt;&lt;li&gt;HTML&lt;/li&gt;&lt;/ul&gt;</code
+        >
+      </li>
+      <li>
+        <strong>Form:</strong><br />
+        <pre><code>&lt;form&gt;
+  &lt;label&gt;Nama:&lt;/label&gt;
+  &lt;input type="text"&gt;
+  &lt;input type="submit" value="Kirim"&gt;
+&lt;/form&gt;</code></pre>
+      </li>
+    </ul>
+
+    <h2>Struktur Folder Website</h2>
+    <pre><code>/website-saya
+│
+├── index.html
+├── style.css
+└── /gambar
+    └── foto.jpg</code></pre>
+
+    <h2>Tips Tambahan</h2>
+    <ul>
+      <li>Gunakan <code>class</code> dan <code>id</code> di HTML</li>
+      <li>Gunakan komentar untuk memudahkan pemahaman kode</li>
+      <li>Latihan terus menerus agar semakin mahir</li>
+    </ul>
+
+    <h2>Kesimpulan</h2>
+    <p>
+      Membuat website dengan HTML dan CSS adalah langkah awal yang penting dalam
+      dunia web development. Kamu tidak perlu menjadi ahli dulu untuk membuat
+      halaman sederhana. Yang penting adalah mulai mencoba dan terus belajar.
+    </p>
+
+    <p>
+      Jika kamu sudah paham dasar ini, langkah selanjutnya adalah belajar
+      JavaScript, responsive design, dan cara mempublikasikan website ke
+      internet.
+    </p>
+
+    <blockquote>
+      "Belajar coding itu seperti naik gunung. Awalnya lelah pengen berhenti, tapi kalau sudah sampai puncak dan berhasil pasti kamu akan naik gunung lagi yg lebih tinggi dan indah
+      ."
+    </blockquote>
+
+    <footer>&copy; 2025 - Artikel oleh Galang Rifda Dinial Huda</footer>
+  </body>
 </html>
-
